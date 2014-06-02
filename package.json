@@ -1,0 +1,41 @@
+{
+  "author": "Andrew Abramov <andrewblond@yandex.com>",
+  "name": "enb-bem-examples",
+  "version": "0.0.1",
+  "description": "BEM examples for ENB",
+  "repository": "git://github.com/andrewblond/enb-bem-examples",
+  "homepage": "https://github.com/andrewblond/enb-bem-examples",
+  "bugs": "https://github.com/andrewblond/enb-bem-examples/issues",
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/andrewblond/enb-bem-examples/blob/master/LICENSE"
+  }],
+  "contributors": [
+    {
+      "name": "Andrew Abramov",
+      "email": "andrewblond@yandex.com"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "peerDependencies": {
+    "enb": ">= 0.12.0"
+  },
+  "dependencies": {
+    "enb-bem-sets": "0.3.5"
+  },
+  "devDependencies": {
+    "enb": ">= 0.12.0",
+    "enb-validate-code": "0.0.1",
+    "jshint": "2.5.1",
+    "jscs": "1.4.5"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "jshint . && jscs -c .jscs.js .",
+    "build": "cd examples/silly && enb make examples",
+    "clean": "rm -rf examples/silly/examples && rm -rf examples/silly/.enb/tmp"
+  }
+}
