@@ -8,7 +8,7 @@ enb-bem-examples [![NPM version](https://badge.fury.io/js/enb-bem-examples.svg)]
 $ npm install --save-dev enb-bem-examples
 ```
 
-Для работы модуля требуется зависимость от пакета enb версии 0.12.0 или выше
+Для работы модуля требуется зависимость от пакета enb версии 0.13.3 или выше
 
 Разработка
 ----------
