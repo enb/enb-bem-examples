@@ -23,7 +23,9 @@
     "enb": ">= 0.13.3"
   },
   "dependencies": {
-    "enb-bem-sets": "0.3.8"
+    "vow": "0.4.4",
+    "enb-bem-sets": "0.3.8",
+    "enb-pseudo-levels": "0.1.1"
   },
   "devDependencies": {
     "enb": ">= 0.13.3",

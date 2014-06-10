@@ -1,0 +1,8 @@
+block
+=====
+
+```bemjson
+{
+    block: 'bla'
+}
+```
