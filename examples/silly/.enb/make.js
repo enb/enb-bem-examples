@@ -8,7 +8,8 @@ module.exports = function (config) {
     examples.build({
         destPath: 'examples',
         levels: getLevels(config),
-        suffixes: ['examples']
+        suffixes: ['examples'],
+        inlineBemjson: true
     });
 };
 
