@@ -6,7 +6,7 @@ module.exports = function (config) {
 
     var examples = config.module('enb-bem-examples').createConfigurator('examples');
 
-    examples.build({
+    examples.configure({
         destPath: 'examples',
         levels: getLevels(config),
         suffixes: ['examples'],
