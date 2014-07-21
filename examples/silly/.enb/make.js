@@ -10,7 +10,10 @@ module.exports = function (config) {
         destPath: 'examples',
         levels: getLevels(config),
         suffixes: ['examples'],
-        inlineBemjson: true
+        inlineBemjson: true,
+        processBemjson: function (bemjson) {
+            return bemjson;
+        }
     });
 };
 
