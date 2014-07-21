@@ -1,9 +1,10 @@
 var path = require('path');
 var rootPath = path.join(__dirname, '..', '..', '..');
-var exampleSets = require(rootPath);
 
 module.exports = function (config) {
-    var examples = exampleSets.create('examples', config);
+    config.includeConfig(rootPath);
+
+    var examples = config.module('enb-bem-examples').createConfigurator('examples');
 
     examples.build({
         destPath: 'examples',
