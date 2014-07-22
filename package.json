@@ -3,12 +3,12 @@
   "name": "enb-bem-examples",
   "version": "0.2.7",
   "description": "BEM examples for ENB",
-  "repository": "git://github.com/andrewblond/enb-bem-examples",
-  "homepage": "https://github.com/andrewblond/enb-bem-examples",
-  "bugs": "https://github.com/andrewblond/enb-bem-examples/issues",
+  "repository": "git://github.com/enb-bem/enb-bem-examples",
+  "homepage": "https://github.com/enb-bem/enb-bem-examples",
+  "bugs": "https://github.com/enb-bem/enb-bem-examples/issues",
   "licenses": [{
     "type": "MIT",
-    "url": "https://github.com/andrewblond/enb-bem-examples/blob/master/LICENSE"
+    "url": "https://github.com/enb-bem/enb-bem-examples/blob/master/LICENSE"
   }],
   "contributors": [
     {

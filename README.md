@@ -1,7 +1,7 @@
 enb-bem-examples
 ================
 
-[![NPM version](https://badge.fury.io/js/enb-bem-examples.svg)](http://badge.fury.io/js/enb-bem-examples) [![Build Status](https://travis-ci.org/andrewblond/enb-bem-examples.svg?branch=master)](https://travis-ci.org/andrewblond/enb-bem-examples) [![Dependency Status](https://david-dm.org/andrewblond/enb-bem-examples.svg)](https://david-dm.org/andrewblond/enb-bem-examples)
+[![NPM version](https://badge.fury.io/js/enb-bem-examples.svg)](http://badge.fury.io/js/enb-bem-examples) [![Build Status](https://travis-ci.org/enb-bem/enb-bem-examples.svg?branch=master)](https://travis-ci.org/enb-bem/enb-bem-examples) [![Dependency Status](https://david-dm.org/enb-bem/enb-bem-examples.svg)](https://david-dm.org/enb-bem/enb-bem-examples)
 
 Установка:
 ----------
