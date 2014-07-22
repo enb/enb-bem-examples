@@ -3,6 +3,7 @@ block
 
 ```bemjson
 {
-    block: 'bla'
+    block: 'bla',
+    theme: 'normal'
 }
 ```
