@@ -1,4 +1,3 @@
 ({
-    block: 'example',
-    content: '10-example'
+    block: 'block-1'
 })

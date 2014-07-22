@@ -10,7 +10,8 @@ module.exports = function (config) {
     examples.configure({
         destPath: 'examples',
         levels: getLevels(config),
-        suffixes: ['examples'],
+        techSuffixes: ['examples'],
+        fileSuffixes: ['bemjson.js', 'title.txt'],
         inlineBemjson: true,
         processBemjson: wrapInPage
     });
