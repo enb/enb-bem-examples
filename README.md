@@ -53,7 +53,7 @@ $ tree -a <sets-name>.examples
           └── 10-simple.bemjson.js
       └── 20-complex/
           ├── blocks/
-          └── 10-comples.bemjson.js
+          └── 20-complex.bemjson.js
 ```
 
 Как использовать?
