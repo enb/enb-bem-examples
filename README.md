@@ -64,7 +64,7 @@ module.exports = function (config) {
     config.includeConfig('enb-bem-examples');
 
     var examples = config.module('enb-bem-examples') // Создаём конфигуратор сетов
-        .createConfigurator('examples');             //  в рамках `specs` таска.
+        .createConfigurator('examples');             //  в рамках `examples` таска.
 
     examples.configure({                     // Декларируем сборку и запуск спеков.
         destPath: 'desktop.examples',        // Указываем путь до уровня-сета.
