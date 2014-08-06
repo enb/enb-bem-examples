@@ -13,7 +13,7 @@ module.exports = function (config) {
         techSuffixes: ['examples'],
         fileSuffixes: ['bemjson.js', 'title.txt'],
         inlineBemjson: true,
-        processBemjson: wrapInPage
+        processInlineBemjson: wrapInPage
     });
 };
 
