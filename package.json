@@ -24,13 +24,13 @@
   },
   "dependencies": {
     "vow": "0.4.5",
-    "bem-naming": "0.1.0",
-    "enb-bem-pseudo-levels": "0.2.0"
+    "bem-naming": "0.2.1",
+    "enb-bem-pseudo-levels": "0.2.1"
   },
   "devDependencies": {
     "enb-magic-factory": "0.1.x",
     "enb-validate-code": "0.0.1",
-    "jshint": "2.5.2",
+    "jshint": "2.5.3",
     "jscs": "1.4.5"
   },
   "main": "lib/index.js",
