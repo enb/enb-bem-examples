@@ -82,22 +82,22 @@ function getLevels(config) {
 }
 ```
 
-Для сборки всех наборов примеров, запускаем сборку `desktop.examples` сета:
+Для сборки всех наборов примеров, запускаем таск:
 
 ```sh
-$ ./node_modules/.bin/sets make desktop.examples
+$ ./node_modules/.bin/enb make examples
 ```
 
 Для сборки примеров, относящихся к конкретной БЭМ-сущности, запускаем:
 
 ```sh
-$ ./node_modules/.bin/sets make desktop.examples/block__elem
+$ ./node_modules/.bin/enb make examples desktop.examples/block__elem
 ```
 
 Для сборки конкретного примера, запускаем:
 
 ```sh
-$ ./node_modules/.bin/sets make desktop.examples/block__elem/10-simple
+$ ./node_modules/.bin/enb make examples desktop.examples/block__elem/10-simple
 ```
 
 Пример использования можно посмотреть в директории `examples/silly`.
