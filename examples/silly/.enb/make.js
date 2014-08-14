@@ -8,7 +8,7 @@ module.exports = function (config) {
     var examples = config.module('enb-bem-examples').createConfigurator('examples');
 
     examples.configure({
-        destPath: 'examples',
+        destPath: 'set.examples',
         levels: getLevels(config),
         techSuffixes: ['examples'],
         fileSuffixes: ['bemjson.js', 'title.txt'],
