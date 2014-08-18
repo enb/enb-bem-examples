@@ -12,7 +12,7 @@ enb-bem-examples
 $ npm install --save-dev enb-bem-examples
 ```
 
-Для работы модуля требуется зависимость от пакета `enb-magic-factory` версии `0.1.x`.
+Для работы модуля требуется зависимость от пакета `enb-magic-factory` версии `0.2.x`.
 
 Технология examples
 -------------------
