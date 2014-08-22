@@ -31,7 +31,7 @@
     "enb-magic-factory": "0.2.x",
     "enb-validate-code": "0.0.1",
     "jshint": "2.5.4",
-    "jscs": "1.4.5"
+    "jscs": "1.5.9"
   },
   "main": "lib/index.js",
   "scripts": {
