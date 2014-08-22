@@ -1,7 +1,7 @@
 enb-bem-examples
 ================
 
-[![NPM version](http://img.shields.io/npm/v/enb-bem-examples.svg?style=flat)](http://badge.fury.io/js/enb-bem-examples) [![Build Status](http://img.shields.io/travis/enb-bem/enb-bem-examples.svg?branch=master&style=flat)](https://travis-ci.org/enb-bem/enb-bem-examples) [![Dependency Status](http://img.shields.io/david/enb-bem/enb-bem-examples.svg?style=flat)](https://david-dm.org/enb-bem/enb-bem-examples)
+[![NPM version](http://img.shields.io/npm/v/enb-bem-examples.svg?style=flat)](http://www.npmjs.org/package/enb-bem-examples) [![Build Status](http://img.shields.io/travis/enb-bem/enb-bem-examples/master.svg?style=flat)](https://travis-ci.org/enb-bem/enb-bem-examples) [![Dependency Status](http://img.shields.io/david/enb-bem/enb-bem-examples.svg?style=flat)](https://david-dm.org/enb-bem/enb-bem-examples)
 
 Инструмент для генерации уровней-сетов из примеров БЭМ-блоков с помощью [ENB](http://enb-make.info/).
 
