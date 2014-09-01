@@ -18,55 +18,24 @@ module.exports = function (config) {
 };
 
 function wrapInPage(bemjson, meta) {
-    var basename = path.basename(meta.filename, '.bemjson.js');
-    var res = {
-        block: 'page',
-        title: naming.stringify(meta.notation),
-        head: [
-            { elem: 'css', url: '_' + basename + '.css' },
-            { elem: 'js', url: '_' + basename + '.js' }
-        ],
-        content: bemjson
+    var basename = '_' + path.basename(meta.filename, '.bemjson.js');
+    return {
+        block : 'page',
+        title : naming.stringify(meta.notation),
+        head : [{ elem : 'css', url : basename + '.css' }],
+        scripts : [{ elem : 'js', url : basename + '.js' }],
+        mods : { theme : getThemeFromBemjson(bemjson) },
+        content : bemjson
     };
-    var theme = getThemeFromBemjson(bemjson);
-
-    if (theme) {
-        res.mods = { theme: theme };
-    }
-
-    return res;
 }
 
 function getThemeFromBemjson(bemjson) {
-    var theme;
+    if(typeof bemjson !== 'object') return;
 
-    if (Array.isArray(bemjson)) {
-        for (var i = 0; i < bemjson.length; ++i) {
-            theme = getThemeFromBemjson(bemjson[i]);
+    var theme, key;
 
-            if (theme) {
-                return theme;
-            }
-        }
-    } else {
-        for (var key in bemjson) {
-            if (bemjson.hasOwnProperty(key)) {
-                var value = bemjson[key];
-
-                if (key === 'mods') {
-                    var mods = bemjson[key];
-
-                    theme = mods && mods.theme;
-
-                    if (theme) {
-                        return theme;
-                    }
-                }
-
-                if (key === 'content' && Array.isArray(value) || (typeof value === 'object' && value !== null)) {
-                    return getThemeFromBemjson(bemjson[key]);
-                }
-            }
-        }
+    for(key in bemjson) {
+        if(theme = key === 'mods' ? bemjson.mods.theme :
+            getThemeFromBemjson(bemjson[key])) return theme;
     }
 }
