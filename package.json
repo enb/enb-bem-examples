@@ -25,13 +25,12 @@
   "dependencies": {
     "vow": "0.4.5",
     "bem-naming": "0.3.0",
-    "enb-bem-pseudo-levels": "0.2.2"
+    "enb-bem-pseudo-levels": "0.2.3"
   },
   "devDependencies": {
     "enb-magic-factory": "0.2.x",
-    "enb-validate-code": "0.0.1",
     "jshint": "2.5.5",
-    "jscs": "1.5.9"
+    "jscs": "1.6.0"
   },
   "main": "lib/index.js",
   "scripts": {
