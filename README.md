@@ -68,18 +68,10 @@ module.exports = function (config) {
 
     examples.configure({                     // Декларируем сборку и запуск спеков.
         destPath: 'desktop.examples',        // Указываем путь до уровня-сета.
-        levels: getLevels(config)            // Указываем уровни для БЭМ-сущностей
+        levels: ['blocks']                   // Указываем уровни для БЭМ-сущностей
                                              //  которых нужно собирать примеры
     });
 };
-
-function getLevels(config) {
-    return [
-        'blocks'
-    ].map(function (level) {
-        return config.resolvePath(level);
-    });
-}
 ```
 
 Для сборки всех наборов примеров, запускаем таск:
