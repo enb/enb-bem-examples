@@ -9,21 +9,13 @@ module.exports = function (config) {
 
     examples.configure({
         destPath: 'set.examples',
-        levels: getLevels(config),
+        levels: ['blocks'],
         techSuffixes: ['examples'],
         fileSuffixes: ['bemjson.js', 'title.txt'],
         inlineBemjson: true,
         processInlineBemjson: wrapInPage
     });
 };
-
-function getLevels(config) {
-    return [
-        'blocks'
-    ].map(function (level) {
-        return config.resolvePath(level);
-    });
-}
 
 function wrapInPage(bemjson, meta) {
     var basename = path.basename(meta.filename, '.bemjson.js');
