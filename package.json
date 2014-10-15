@@ -20,7 +20,7 @@
     "node": ">= 0.10.0"
   },
   "peerDependencies": {
-    "enb-magic-factory": "0.2.x"
+    "enb-magic-factory": ">= 0.3.0 < 1.0.0"
   },
   "dependencies": {
     "vow": "0.4.5",
@@ -28,7 +28,7 @@
     "enb-bem-pseudo-levels": "0.2.3"
   },
   "devDependencies": {
-    "enb-magic-factory": "0.2.x",
+    "enb-magic-factory": ">= 0.3.0 < 1.0.0",
     "jshint": "2.5.5",
     "jscs": "1.6.0"
   },
