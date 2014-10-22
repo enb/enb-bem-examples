@@ -1,7 +1,7 @@
 {
   "author": "Andrew Abramov <andrewblond@yandex.com>",
   "name": "enb-bem-examples",
-  "version": "0.4.12",
+  "version": "0.5.0",
   "description": "BEM examples for ENB",
   "repository": "git://github.com/enb-bem/enb-bem-examples",
   "homepage": "https://github.com/enb-bem/enb-bem-examples",
@@ -10,12 +10,6 @@
     "type": "MIT",
     "url": "https://github.com/enb-bem/enb-bem-examples/blob/master/LICENSE"
   }],
-  "contributors": [
-    {
-      "name": "Andrew Abramov",
-      "email": "andrewblond@yandex.com"
-    }
-  ],
   "engines": {
     "node": ">= 0.10.0"
   },
