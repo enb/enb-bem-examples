@@ -153,3 +153,8 @@ $ ./node_modules/.bin/enb make examples desktop.examples/block__elem/10-simple
 ```sh
 $ ./node_modules/.bin/enb make examples desktop.examples/block__elem
 ```
+
+Лицензия
+--------
+
+© 2014 YANDEX LLC. Код лицензирован [Mozilla Public License 2.0](LICENSE.txt).
