@@ -1,7 +1,7 @@
 block
 =====
 
-```bemjson
+```js
 {
     block: 'bla',
     theme: 'normal'
