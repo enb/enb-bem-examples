@@ -19,14 +19,14 @@
     "enb-magic-factory": ">= 0.3.0 < 1.0.0"
   },
   "dependencies": {
-    "bem-naming": "0.5.0",
+    "bem-naming": "0.5.1",
     "enb-bem-pseudo-levels": "0.2.6",
-    "vow": "0.4.7"
+    "vow": "0.4.10"
   },
   "devDependencies": {
     "enb-magic-factory": ">= 0.3.0 < 1.0.0",
-    "jscs": "1.8.1",
-    "jshint": "2.5.10"
+    "jscs": "1.13.1",
+    "jshint": "2.8.0"
   },
   "main": "lib/index.js",
   "scripts": {
