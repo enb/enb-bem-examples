@@ -1,6 +1,100 @@
 История изменений
 =================
 
+1.0.0
+-----
+
+### Сборка уровней для примеров
+
+Изменены пути, по которым создаются директории уровней для примеров ([#27]):
+  * Уровни, предназначенные для всех примеров блока, будут записаны в директорию `<block-name>/<example-name>/<block-name>.blocks`, вместо `<block-name>/.blocks`.
+  * Уровни, предназначенные для конкретного примера, будут записаны в директорию `<block-name>/<example-name>/<example-name>.blocks`, вместо `<block-name>/<example-name>/blocks`.
+
+**Было:**
+
+```
+desktop.examples
+└── button/
+    ├── .blocks/      # уровень для всех примеров блока <block-name>
+    ├── 10-simple/
+        ├── blocks/   # уровень для примера 10-simple
+        └── 10-simple.bemjson.js.symlink
+    └── 20-complex/
+        └── 20-comples.bemjson.js.symlink
+```
+
+**Стало:**
+
+```
+desktop.examples
+└── button/
+    ├── 10-simple/
+        ├── <block-name>.blocks/    # уровень для всех примеров блока <block-name>
+        ├── 10-simple.blocks/       # уровень для примера 10-simple
+        └── 10-simple.bemjson.js.symlink
+    └── 20-complex/
+        ├── <block-name>.blocks/    # уровень для всех примеров блока <block-name>
+        └── 20-comples.bemjson.js.symlink
+```
+
+Это означает, что при сборке примеров необходимо изменить поиск уровней.
+
+**Было:**
+
+```js
+var path = require('path'),
+    fs = require('fs');
+
+module.exports = function(projectConfig) {
+    projectConfig.node('desktop.examples/*/*', function(nodeConfig) {
+        var nodeDir = nodeConfig.getNodePath(),
+            blockLevel = path.join(nodeDir, '..', '.blocks'),
+            exampleLevel = path.join(nodeDir, 'blocks'),
+            levels = [];
+
+        fs.existsSync(blockLevel) && levels.push(blockLevel);
+        fs.existsSync(exampleLevel) && levels.push(exampleLevel);
+
+        /* ... */
+    });
+};
+```
+
+**Стало:**
+
+```js
+var path = require('path'),
+    fs = require('fs');
+
+module.exports = function(projectConfig) {
+    projectConfig.node('desktop.examples/*/*', function(nodeConfig) {
+        var nodeDir = nodeConfig.getNodePath(),
+
+            blockName = path.basename(path.dirname(nodeDir)),
+            blockLevel = path.join(nodeDir, blockName + '.blocks'),
+
+            exampleName = path.basename(nodeDir),
+            exampleLevel = path.join(nodeDir, exampleName + '.blocks'),
+
+            levels = [];
+
+        fs.existsSync(blockLevel) && levels.push(blockLevel);
+        fs.existsSync(exampleLevel) && levels.push(exampleLevel);
+
+        /* ... */
+    });
+};
+```
+
+### Исправления ошибок
+
+* Исправлена сборка уровней блока для дальнейшей обработки с помощью `borschik` ([#15]).
+* Исправлена точечная сборка примеров: не собирались уровни блока ([#18]).
+
+### Зависимости
+
+* Модуль `vow@0.4.11` обновлен до версии `0.4.12`.
+
 0.6.0
 -----
 
@@ -81,5 +175,8 @@
 * Переход на `enb-magic-factory@0.3.x`.
 * Модуль `vow` обновлён до версии `0.4.6`.
 
+[#27]: https://github.com/enb-bem/enb-bem-examples/pull/27
 [#26]: https://github.com/enb-bem/enb-bem-examples/pull/26
 [#19]: https://github.com/enb-bem/enb-bem-examples/issues/19
+[#18]: https://github.com/enb-bem/enb-bem-examples/issues/18
+[#15]: https://github.com/enb-bem/enb-bem-examples/issues/15
