@@ -49,10 +49,12 @@ $ tree -a <set-name>.examples
 <set-name>.examples
  └── <block-name>/                  # папка группирует примеры для БЭМ-сущности
       ├── 10-simple/                # `10-simple` бандл
-          ├── blocks/               # уровень блоков только для примера `10-simple`
+          ├── <block-name>.blocks/  # уровень для всех примеров блока `<block-name>`
+          ├── 10-simple.blocks/     # уровень блоков только для примера `10-simple`
           └── 10-simple.bemjson.js  # `10-simple` бандл в технологии `bemjson.js`
       └── 20-complex/               # `20-simple` бандл
-          ├── blocks/               # уровень блоков только для примера `20-simple`
+          ├── <block-name>.blocks/  # уровень для всех примеров блока `<block-name>`
+          ├── 20-complex.blocks/    # уровень блоков только для примера `20-simple`
           └── 20-complex.bemjson.js # `20-simple` бандл в технологии `bemjson.js`
 ```
 
