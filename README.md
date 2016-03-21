@@ -1,7 +1,7 @@
 enb-bem-examples
 ================
 
-[![NPM version](https://img.shields.io/npm/v/enb-bem-examples.svg?style=flat)](http://www.npmjs.org/package/enb-bem-examples) [![Build Status](https://img.shields.io/travis/enb-bem/enb-bem-examples/master.svg?style=flat)](https://travis-ci.org/enb-bem/enb-bem-examples) [![Dependency Status](https://img.shields.io/david/enb-bem/enb-bem-examples.svg?style=flat)](https://david-dm.org/enb-bem/enb-bem-examples)
+[![NPM version](https://img.shields.io/npm/v/enb-bem-examples.svg?style=flat)](http://www.npmjs.org/package/enb-bem-examples) [![Build Status](https://img.shields.io/travis/enb/enb-bem-examples/master.svg?style=flat)](https://travis-ci.org/enb/enb-bem-examples) [![Dependency Status](https://img.shields.io/david/enb/enb-bem-examples.svg?style=flat)](https://david-dm.org/enb/enb-bem-examples)
 
 Инструмент для генерации сетов из примеров БЭМ-блоков с помощью [ENB](http://enb-make.info/).
 

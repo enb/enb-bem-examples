@@ -175,8 +175,8 @@ module.exports = function(projectConfig) {
 * Переход на `enb-magic-factory@0.3.x`.
 * Модуль `vow` обновлён до версии `0.4.6`.
 
-[#27]: https://github.com/enb-bem/enb-bem-examples/pull/27
-[#26]: https://github.com/enb-bem/enb-bem-examples/pull/26
-[#19]: https://github.com/enb-bem/enb-bem-examples/issues/19
-[#18]: https://github.com/enb-bem/enb-bem-examples/issues/18
-[#15]: https://github.com/enb-bem/enb-bem-examples/issues/15
+[#27]: https://github.com/enb/enb-bem-examples/pull/27
+[#26]: https://github.com/enb/enb-bem-examples/pull/26
+[#19]: https://github.com/enb/enb-bem-examples/issues/19
+[#18]: https://github.com/enb/enb-bem-examples/issues/18
+[#15]: https://github.com/enb/enb-bem-examples/issues/15
