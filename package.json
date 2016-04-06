@@ -20,7 +20,7 @@
     "enb-magic-factory": ">= 0.3.0 < 1.0.0"
   },
   "dependencies": {
-    "bem-naming": "0.5.1",
+    "bem-naming": "1.0.1",
     "enb-bem-pseudo-levels": "0.3.0",
     "vow": "0.4.12"
   },
