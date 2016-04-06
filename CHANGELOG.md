@@ -1,6 +1,17 @@
 История изменений
 =================
 
+1.0.1
+-----
+
+### Исправление ошибок
+
+* В сборку inline-примеров не попадали общие уровни для примеров блока ([#30]).
+
+### Зависимости
+
+* Модуль `bem-naming@0.5.1` обновлён до версии `1.0.1`.
+
 1.0.0
 -----
 
@@ -175,6 +186,7 @@ module.exports = function(projectConfig) {
 * Переход на `enb-magic-factory@0.3.x`.
 * Модуль `vow` обновлён до версии `0.4.6`.
 
+[#30]: https://github.com/enb/enb-bem-examples/issues/30
 [#27]: https://github.com/enb/enb-bem-examples/pull/27
 [#26]: https://github.com/enb/enb-bem-examples/pull/26
 [#19]: https://github.com/enb/enb-bem-examples/issues/19
