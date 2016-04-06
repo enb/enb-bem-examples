@@ -27,13 +27,14 @@
   "devDependencies": {
     "enb": ">= 0.15.0 < 2.0.0",
     "enb-magic-factory": ">= 0.3.0 < 1.0.0",
-    "jscs": "2.11.0",
-    "jshint": "2.9.1"
+    "eslint": "2.7.0",
+    "eslint-config-pedant": "0.1.1",
+    "jscs": "2.11.0"
   },
   "main": "lib/index.js",
   "scripts": {
     "test": "npm run lint",
-    "lint": "jshint . && jscs .",
+    "lint": "eslint . && jscs .",
     "build": "enb -d examples/silly make __magic__ set.examples",
     "clean": "rm -rf examples/*/*examples && rm -rf examples/*/.enb/tmp"
   }

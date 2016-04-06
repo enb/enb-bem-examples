@@ -1,0 +1,7 @@
+env:
+  node: true
+
+extends: pedant
+
+rules:
+  valid-jsdoc: off
