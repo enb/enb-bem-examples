@@ -27,7 +27,7 @@
   "devDependencies": {
     "enb": ">= 0.15.0 < 2.0.0",
     "enb-magic-factory": ">= 0.3.0 < 1.0.0",
-    "eslint": "^3.0.0",
+    "eslint": "^3.9.1",
     "eslint-config-pedant": "^0.8.0",
     "jscs": "^3.0.3"
   },
