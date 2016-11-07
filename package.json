@@ -22,7 +22,7 @@
   "dependencies": {
     "bem-naming": "1.0.1",
     "enb-bem-pseudo-levels": "0.3.0",
-    "vow": "0.4.12"
+    "vow": "0.4.13"
   },
   "devDependencies": {
     "enb": ">= 0.15.0 < 2.0.0",
