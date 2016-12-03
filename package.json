@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "bem-naming": "1.0.1",
-    "enb-bem-pseudo-levels": "0.3.0",
+    "enb-bem-pseudo-levels": "0.4.0",
     "vow": "0.4.13"
   },
   "devDependencies": {
